@@ -1,0 +1,82 @@
+.admin-page { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+
+.admin-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 32px; padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.admin-header h1 { font-family: var(--font-display); font-size: 28px; font-weight: 800; }
+
+.flash {
+  background: rgba(124,108,255,0.12); border: 1px solid rgba(124,108,255,0.3);
+  color: var(--accent); padding: 12px 18px; border-radius: 10px;
+  margin-bottom: 20px; font-size: 14px;
+}
+
+.admin-tabs { display: flex; gap: 8px; margin-bottom: 32px; }
+.tab-btn {
+  padding: 10px 22px; background: none; border: 1.5px solid var(--border);
+  border-radius: 50px; color: var(--muted); font-family: var(--font-display);
+  font-size: 13px; font-weight: 600; transition: all var(--transition);
+  display: flex; align-items: center; gap: 8px;
+}
+.tab-btn:hover, .tab-btn.active { border-color: var(--accent); color: var(--text); }
+.tab-btn.active { background: rgba(124,108,255,0.1); }
+
+.badge {
+  background: var(--accent); color: #fff;
+  padding: 2px 7px; border-radius: 50px; font-size: 11px; font-weight: 700;
+}
+.badge.ml { margin-left: 8px; }
+
+.tab-content { display: flex; flex-direction: column; gap: 32px; }
+
+.admin-form {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.admin-form h2 { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+.admin-form input, .admin-form textarea {
+  background: rgba(255,255,255,0.04); border: 1.5px solid var(--border);
+  border-radius: 10px; padding: 12px 16px; color: var(--text);
+  font-size: 14px; outline: none; transition: border-color 0.2s; width: 100%;
+}
+.admin-form input:focus, .admin-form textarea:focus { border-color: var(--accent); }
+
+.checkbox-label { display: flex; align-items: center; gap: 10px; font-size: 14px; cursor: pointer; }
+.checkbox-label input { width: auto; }
+
+.range-label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted); }
+.range-label input[type=range] { width: 100%; accent-color: var(--accent); }
+
+.form-actions { display: flex; gap: 12px; }
+
+/* List */
+.admin-list { display: flex; flex-direction: column; gap: 12px; }
+.admin-list-item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 18px 20px;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.admin-list-item strong { font-family: var(--font-display); font-size: 15px; }
+.admin-list-item p { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+.item-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.item-actions .btn, .btn-danger { padding: 7px 16px; font-size: 12px; }
+.btn-danger {
+  background: rgba(239,68,68,0.1); border: 1.5px solid rgba(239,68,68,0.2);
+  color: #f87171; border-radius: 50px; font-family: var(--font-display);
+  font-size: 12px; font-weight: 600; transition: all var(--transition);
+}
+.btn-danger:hover { background: rgba(239,68,68,0.2); }
+
+.message-item.unread { border-left: 3px solid var(--accent); }
+.msg-email { color: var(--muted); font-weight: 400; font-size: 13px; }
+.msg-text { color: var(--muted); font-size: 14px; margin-top: 6px; max-width: 600px; }
+.msg-date { color: var(--muted); font-size: 12px; }
+.empty { color: var(--muted); }
