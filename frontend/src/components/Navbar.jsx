@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <Link to="/" className="navbar-logo">YourName<span>.</span></Link>
+        <Link to="/" className="navbar-logo">Gaurav Kumar<span>.</span></Link>
 
         <ul className={`navbar-links${open ? ' open' : ''}`}>
           {links.map(l => (

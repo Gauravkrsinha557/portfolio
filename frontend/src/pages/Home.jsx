@@ -25,8 +25,8 @@ export default function Home() {
             that matter.
           </h1>
           <p className="hero-sub">
-            Full-stack developer specialising in React &amp; Node.js.<br />
-            I turn ideas into clean, fast, and scalable web apps.
+           Final year student & full-stack developer passionate
+about building real-world web applications.
           </p>
           <div className="hero-btns">
             <Link to="/projects" className="btn btn-primary">View Projects →</Link>

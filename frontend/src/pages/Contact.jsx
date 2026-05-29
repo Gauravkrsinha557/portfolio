@@ -38,21 +38,22 @@ export default function Contact() {
               <span className="info-icon">✉</span>
               <div>
                 <h3>Email</h3>
-                <p>you@example.com</p>
+                <p>gauravsinha9182@gmail.com</p>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">💼</span>
               <div>
                 <h3>GitHub</h3>
-                <p>github.com/yourusername</p>
+                <p>github.com/Gauravkrsinha557
+</p>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">🔗</span>
               <div>
                 <h3>LinkedIn</h3>
-                <p>linkedin.com/in/yourprofile</p>
+                <p>linkedin.com/in/www.linkedin.com/in/gaurav-kumar-50aa58321</p>
               </div>
             </div>
           </div>
